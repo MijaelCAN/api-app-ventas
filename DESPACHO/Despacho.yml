@@ -1,17 +1,17 @@
 info:
-  name: Version
+  name: Despacho
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: GET
-  url: "{{baseUrl}}api/Version?imei={{imei}}&token={{token}}"
+  url: "{{baseUrl}}api/Dispatch?imei={{imei}}&fecha={{fecha}}"
   params:
     - name: imei
       value: "{{imei}}"
       type: query
-    - name: token
-      value: "{{token}}"
+    - name: fecha
+      value: "{{fecha}}"
       type: query
   auth: inherit
 

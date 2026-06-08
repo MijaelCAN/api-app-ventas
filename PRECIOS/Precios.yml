@@ -1,17 +1,14 @@
 info:
-  name: Version
+  name: Precios
   type: http
   seq: 2
 
 http:
   method: GET
-  url: "{{baseUrl}}api/Version?imei={{imei}}&token={{token}}"
+  url: "{{baseUrl}}api/PriceList?imei={{imei}}"
   params:
     - name: imei
       value: "{{imei}}"
-      type: query
-    - name: token
-      value: "{{token}}"
       type: query
   auth: inherit
 
