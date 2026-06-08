@@ -1,0 +1,22 @@
+info:
+  name: Cobranzas - Recibos
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}api/Collections/Receip?imei={{imei}}&recibo={{recibo}}"
+  params:
+    - name: imei
+      value: "{{imei}}"
+      type: query
+    - name: recibo
+      value: "{{recibo}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

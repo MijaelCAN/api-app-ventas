@@ -1,7 +1,7 @@
 info:
-  name: PRECIOS
+  name: CLIENTES
   type: folder
-  seq: 4
+  seq: 10
 
 request:
   auth: inherit
