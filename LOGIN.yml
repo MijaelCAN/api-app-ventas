@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: api/Users?imei={IMEI}
+  url: "{{PERU}}api/Users?imei={{IMEI}}"
   params:
     - name: imei
-      value: "{IMEI}"
+      value: "{{IMEI}}"
       type: query
   auth: inherit
 
