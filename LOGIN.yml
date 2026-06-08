@@ -1,0 +1,19 @@
+info:
+  name: LOGIN
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: api/Users?imei={IMEI}
+  params:
+    - name: imei
+      value: "{IMEI}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
