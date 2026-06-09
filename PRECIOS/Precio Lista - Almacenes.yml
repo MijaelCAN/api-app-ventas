@@ -1,0 +1,28 @@
+info:
+  name: Precio Lista - Almacenes
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}api/PriceList/PriceListWarehouse?imei={{imei}}&whsCode={{almacen}}&pl1=1&pl2=2"
+  params:
+    - name: imei
+      value: "{{imei}}"
+      type: query
+    - name: whsCode
+      value: "{{almacen}}"
+      type: query
+    - name: pl1
+      value: "1"
+      type: query
+    - name: pl2
+      value: "2"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

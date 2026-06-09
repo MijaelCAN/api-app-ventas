@@ -1,0 +1,22 @@
+info:
+  name: Cotizacion por Fecha
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}api/Quotation"
+  body:
+    type: json
+    data: |-
+      {
+        "Fecha": "{{fecha}}",
+        "Imei": "{{imei}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

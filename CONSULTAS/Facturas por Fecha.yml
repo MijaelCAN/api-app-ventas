@@ -1,0 +1,22 @@
+info:
+  name: Facturas por Fecha
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}api/Invoices?imei={{imei}}&fecha={{fecha}}"
+  params:
+    - name: imei
+      value: "{{imei}}"
+      type: query
+    - name: fecha
+      value: "{{fecha}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

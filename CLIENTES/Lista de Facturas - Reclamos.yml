@@ -1,0 +1,19 @@
+info:
+  name: Lista de Facturas - Reclamos
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{baseUrlClaim}}api/Claims/Invoice?ruc={{rucCliente}}"
+  params:
+    - name: ruc
+      value: "{{rucCliente}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
