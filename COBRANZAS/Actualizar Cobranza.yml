@@ -1,0 +1,30 @@
+info:
+  name: Actualizar Cobranza
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}api/Collections/8F4A641E9E78FC497D8231346F22F26B"
+  body:
+    type: json
+    data: |-
+      {
+        "Collections": [
+          {
+            "BankID": "10-10-01-01-01",
+            "Code": "8F4A641E9E78FC497D8231346F22F26B",
+            "Deposit": "9999997891011",
+            "QRStatus": "Y",
+            "Receip": "269",
+            "U_VIS_UserID": "213"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

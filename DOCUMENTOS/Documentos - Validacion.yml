@@ -1,7 +1,7 @@
 info:
-  name: Validacion de Documentos
+  name: Documentos - Validacion
   type: http
-  seq: 18
+  seq: 2
 
 http:
   method: GET

@@ -1,7 +1,7 @@
 info:
   name: CONSULTAS
   type: folder
-  seq: 23
+  seq: 24
 
 request:
   auth: inherit

@@ -1,0 +1,137 @@
+info:
+  name: Orden de Venta
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}api/SalesOrder"
+  body:
+    type: json
+    data: |-
+      {
+        "SalesOrders": [
+          {
+            "ApCredit": "N",
+            "ApDues": "N",
+            "ApPrcnt": "N",
+            "ApTPag": "N",
+            "AppVersion": "2.68.0",
+            "Branch": "SANTIAGO",
+            "Brand": "motorola",
+            "CardCode": "C10238788-0",
+            "ColorApproval": "",
+            "Comments": "prueba tic-Comentario",
+            "CustomerPriceList": "1",
+            "DocCurrency": "CLP ",
+            "DocDate": "{{fecha}}",
+            "DocDueDate": "20260612",
+            "DocType": "I",
+            "DocumentAdditionalExpenses": [
+              {
+                "DistributionMethod": "aedm_Equally",
+                "DistributionRule": "U100",
+                "DistributionRule2": "3",
+                "DistributionRule3": "",
+                "ExpenseCode": "2",
+                "LineGross": "0.000",
+                "TaxCode": "EXO_IGV",
+                "TaxType": "aext_NormalTax"
+              }
+            ],
+            "DocumentLines": [
+              {
+                "AcctCode": "",
+                "COGSAccountCode": "",
+                "CostingCode": "U100",
+                "CostingCode2": "3",
+                "CostingCode3": "",
+                "DiscountPercent": "0.0",
+                "Dscription": "LIT DRAULA H 68",
+                "FiseAmount": "0.0",
+                "ItemCode": "1000786",
+                "LineTotal": "1940.000",
+                "Margen": "0",
+                "Price": "1940.0",
+                "Quantity": "1",
+                "TaxCode": "IVA",
+                "TaxOnly": "N",
+                "U_SYP_FECAT07": "",
+                "U_VIST_CTAINGDCTO": "",
+                "U_VIS_CommentText": "0",
+                "U_VIS_PromID": "0",
+                "U_VIS_PromLineID": "0",
+                "WarehouseCode": "SA001"
+              },
+              {
+                "AcctCode": "",
+                "COGSAccountCode": "",
+                "CostingCode": "U100",
+                "CostingCode2": "3",
+                "CostingCode3": "",
+                "DiscountPercent": "0.0",
+                "Dscription": "FRA RAYVON FORK OIL 10W DE 1 L",
+                "FiseAmount": "0.0",
+                "ItemCode": "1000780",
+                "LineTotal": "4571.000",
+                "Margen": "0",
+                "Price": "4571.0",
+                "Quantity": "1",
+                "TaxCode": "IVA",
+                "TaxOnly": "N",
+                "U_SYP_FECAT07": "",
+                "U_VIST_CTAINGDCTO": "",
+                "U_VIS_CommentText": "0",
+                "U_VIS_PromID": "0",
+                "U_VIS_PromLineID": "0",
+                "WarehouseCode": "SA001"
+              }
+            ],
+            "DocumentsOwner": "213",
+            "Draft": "N",
+            "FederalTaxID": "10238788-0",
+            "Intent": "2",
+            "Margen": "0",
+            "Model": "moto g85 5G",
+            "OSVersion": "15",
+            "PayToCode": "01",
+            "PaymentGroupCode": "103",
+            "Route": "N",
+            "SalesPersonCode": "94",
+            "ShipToCode": "01",
+            "TaxDate": "20260609",
+            "Type": "O",
+            "U_SYP_DOCEXPORT": "N",
+            "U_SYP_FEEST": "PE",
+            "U_SYP_FEMEX": "1",
+            "U_SYP_FETO": "01",
+            "U_SYP_MDMT": "",
+            "U_SYP_PDTCRE": "S",
+            "U_SYP_PDTREV": "S",
+            "U_SYP_TVENTA": "",
+            "U_SYP_VIST_TG": "N",
+            "U_VIST_SUCUSU": "SANTIAGO",
+            "U_VIS_AgencyCode": "",
+            "U_VIS_CompleteOV": "N",
+            "U_VIS_DeliveryDateOptional": "20260609",
+            "U_VIS_DiscountPercent": "0",
+            "U_VIS_EVCommentary": "PRUEBA TIC",
+            "U_VIS_Flete": "0",
+            "U_VIS_InternalQuotation": "N",
+            "U_VIS_MOTAPLDESC": "-",
+            "U_VIS_ReasonDiscountPercent": "",
+            "U_VIS_SalesOrderID": "20260609901700",
+            "U_VIT_VENMOS": "S",
+            "isApplyFlete": false,
+            "isUsedPromotionLowRotation": "N",
+            "quotation": "N"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

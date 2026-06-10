@@ -1,20 +1,20 @@
 info:
-  name: Comisiones
+  name: Efectividad
   type: http
-  seq: 13
+  seq: 4
 
 http:
   method: GET
-  url: "{{baseUrl}}api/Commissions?imei={{imei}}&Year={{anioComision}}&Month={{mesComision}}"
+  url: "{{baseUrl}}api/Effectiveness?imei={{imei}}&startDate={{fecha}}&endDate={{fecha}}"
   params:
     - name: imei
       value: "{{imei}}"
       type: query
-    - name: Year
-      value: "{{anioComision}}"
+    - name: startDate
+      value: "{{fecha}}"
       type: query
-    - name: Month
-      value: "{{mesComision}}"
+    - name: endDate
+      value: "{{fecha}}"
       type: query
   auth: inherit
 

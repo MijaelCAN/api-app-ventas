@@ -2,6 +2,24 @@ opencollection: 1.0.0
 
 info:
   name: APP-VENTAS
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  scripts:
+    - type: before-request
+      code: |-
+        const hoy = new Date().toISOString().split('T')[0];
+        bru.setVar('fecha', hoy);
 bundled: false
 extensions:
   bruno:

@@ -1,0 +1,54 @@
+info:
+  name: Generar Cobranza
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}api/Collections"
+  body:
+    type: json
+    data: |-
+      {
+        "Collections": [
+          {
+            "AmountCharged": "1.000",
+            "AppVersion": "2.68.0",
+            "Balance": "0",
+            "BankID": "",
+            "Banking": "N",
+            "Brand": "motorola",
+            "CancelReason": "0",
+            "CardCode": "C77488825-K",
+            "CollectionCheck": "N",
+            "Commentary": "",
+            "Deposit": "",
+            "DirectDeposit": "N",
+            "DocEntryFT": "0",
+            "DocNum": "0",
+            "DocTotal": "0",
+            "IncomeDate": "20260609",
+            "IncomeTime": "1044",
+            "Intent": "1",
+            "ItemDetail": "2026060910444201",
+            "Model": "moto g85 5G",
+            "NewBalance": "0",
+            "OSVersion": "15",
+            "POSPay": "N",
+            "QRStatus": "Y",
+            "Receip": "269",
+            "SlpCode": "94",
+            "Status": "P",
+            "U_VIS_CollectionSalesperson": "N",
+            "U_VIS_Type": "Cobranza en Efectivo",
+            "UserID": "213"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

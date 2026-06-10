@@ -1,0 +1,45 @@
+info:
+  name: Generar Visita
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}api/Visit"
+  body:
+    type: json
+    data: |-
+      {
+        "Visits": [
+          {
+            "Address": "01",
+            "Amount": "0",
+            "AppVersion": "2.68.0",
+            "Brand": "motorola",
+            "CardCode": "C10238788-0",
+            "Date": "{{fecha}}",
+            "Hour": "034839",
+            "Hour_Before": "0",
+            "Intent": "1",
+            "Latitude": "-11.96620444",
+            "Longitude": "-76.97904934",
+            "MobileID": "0",
+            "Model": "moto g85 5G",
+            "OSVersion": "15",
+            "Observation": "PRUEBA TIC",
+            "SlpCode": "94",
+            "StatusRoute": "N",
+            "Territory": "Z030",
+            "Type": "12",
+            "UserId": "213",
+            "IdVisit": "202606093483901"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
