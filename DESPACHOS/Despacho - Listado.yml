@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}api/Dispatch/List?imei={{imei}}&fecha={{fecha}}"
+  url: "{{baseUrl}}api/Dispatch/List?imei={{imei}}&fecha=20260609"
   params:
     - name: imei
       value: "{{imei}}"
       type: query
     - name: fecha
-      value: "{{fecha}}"
+      value: "20260609"
       type: query
   auth: inherit
 

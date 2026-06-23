@@ -18,7 +18,14 @@ request:
   scripts:
     - type: before-request
       code: |-
-        const hoy = new Date().toISOString().split('T')[0];
+        const fecha = new Date();
+
+        const hoy = [
+          fecha.getFullYear(),
+          String(fecha.getMonth() + 1).padStart(2, '0'),
+          String(fecha.getDate()).padStart(2, '0')
+        ].join('-');
+
         bru.setVar('fecha', hoy);
 bundled: false
 extensions:

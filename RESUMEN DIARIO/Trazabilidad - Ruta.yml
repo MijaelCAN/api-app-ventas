@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}api/Traceabilities/route?imei={{imei}}&fecha=2026-06-08"
+  url: "{{baseUrl}}api/Traceabilities/route?imei={{imei}}&fecha={{fecha}}"
   params:
     - name: imei
       value: "{{imei}}"
       type: query
     - name: fecha
-      value: 2026-06-08
+      value: "{{fecha}}"
       type: query
   auth: inherit
 

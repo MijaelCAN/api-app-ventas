@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}api/PriceList/PriceWarehouseClient?imei{{imei}}&Almacen={{almacen}}"
+  url: "{{baseUrl}}api/PriceList/PriceWarehouseClient?imei={{imei}}&Almacen={{almacen}}"
   params:
-    - name: imei{{imei}}
-      value: ""
+    - name: imei
+      value: "{{imei}}"
       type: query
     - name: Almacen
       value: "{{almacen}}"
